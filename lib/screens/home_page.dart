@@ -16,9 +16,22 @@ class HomePage extends StatelessWidget {
         ),
       ],
     ));
-    for (var i = 0; i < 20; i++) {
-      listHomeFeed.add(PhotoFeedWidget());
-    }
+
+    listHomeFeed.add(PhotoFeedWidget(
+        'assets/blog_leaves.png',
+        'Pecinta Daon',
+        'Taman Wilujeng Sumping',
+        'assets/blog_leaves.png',
+        'Seneng Banget bisa liat daon lagi'));
+    listHomeFeed.add(PhotoFeedWidget('assets/flutter.jpg', 'Flutter Maniacs',
+        'Somewhere inside internet', 'assets/flutter.jpg', 'Coding Time'));
+    listHomeFeed.add(PhotoFeedWidget('assets/nintendo_switch.jpg',
+        'Switch Lover', '', 'assets/nintendo_switch.jpg', 'Nge game dulu ah'));
+    listHomeFeed.add(PhotoFeedWidget('assets/piano.jpg', 'Lovely Musician', '',
+        'assets/piano.jpg', 'Time to practice'));
+    listHomeFeed.add(PhotoFeedWidget('assets/sword.jpg', 'Sword Geek', '',
+        'assets/sword.jpg', 'Come and see me'));
+
     return Scaffold(
       body: SafeArea(
         child: Column(

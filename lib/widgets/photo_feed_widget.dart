@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
 class PhotoFeedWidget extends StatelessWidget {
+  String avatar = '';
+  String username = '';
+  String position = '';
+  String picture = '';
+  String pictureDescription = '';
+
+  PhotoFeedWidget(this.avatar, this.username, this.position, this.picture,
+      this.pictureDescription);
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -12,7 +21,7 @@ class PhotoFeedWidget extends StatelessWidget {
             ),
             ClipOval(
               child: Image.asset(
-                'assets/blog_leaves.png',
+                avatar, //use constructor
                 height: 30,
                 width: 30,
                 fit: BoxFit.fill,
@@ -22,9 +31,13 @@ class PhotoFeedWidget extends StatelessWidget {
               width: 10,
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Pecinta Daon'),
-                Text('Taman Wilujeng Sumping'),
+                Text(
+                  username, //use constructor
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                Text(position), //use constructor
               ],
             ),
             Spacer(),
@@ -40,7 +53,7 @@ class PhotoFeedWidget extends StatelessWidget {
           ],
         ),
         Image.asset(
-          'assets/blog_leaves.png',
+          picture, //use constructor
           height: 250,
         ),
         Row(
@@ -74,13 +87,13 @@ class PhotoFeedWidget extends StatelessWidget {
               width: 10,
             ),
             Text(
-              'Pecinta Daon',
+              username, //use constructor
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(
               width: 5,
             ),
-            Text('Seneng Banget bisa liat daon lagi'),
+            Text(pictureDescription), //use constructor
           ],
         ),
         SizedBox(
