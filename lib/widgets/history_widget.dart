@@ -82,9 +82,6 @@ class CircleHistoryWidget extends StatelessWidget {
           )),
         ],
       ),
-      SizedBox(
-        height: 10,
-      ),
     ]);
   }
 }

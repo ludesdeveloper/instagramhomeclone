@@ -5,31 +5,87 @@ class PhotoFeedWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Row(
+          children: [
+            SizedBox(
+              width: 10,
+            ),
+            ClipOval(
+              child: Image.asset(
+                'assets/blog_leaves.png',
+                height: 30,
+                width: 30,
+                fit: BoxFit.fill,
+              ),
+            ),
+            SizedBox(
+              width: 10,
+            ),
+            Column(
+              children: [
+                Text('Pecinta Daon'),
+                Text('Taman Wilujeng Sumping'),
+              ],
+            ),
+            Spacer(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                FlatButton.icon(
+                    onPressed: () {},
+                    icon: Icon(Icons.more_vert),
+                    label: Text(''))
+              ],
+            ),
+          ],
+        ),
         Image.asset(
           'assets/blog_leaves.png',
-          height: 300,
+          height: 250,
         ),
-        Text('my leaves'),
-        Image.asset(
-          'assets/flutter.jpg',
-          height: 300,
+        Row(
+          children: [
+            FlatButton.icon(
+                minWidth: 10,
+                onPressed: () {},
+                icon: Icon(Icons.favorite),
+                label: Text('')),
+            FlatButton.icon(
+                minWidth: 10,
+                onPressed: () {},
+                icon: Icon(Icons.message),
+                label: Text('')),
+            FlatButton.icon(
+                minWidth: 10,
+                onPressed: () {},
+                icon: Icon(Icons.inbox),
+                label: Text('')),
+            Spacer(),
+            FlatButton.icon(
+                minWidth: 10,
+                onPressed: () {},
+                icon: Icon(Icons.save),
+                label: Text('')),
+          ],
         ),
-        Text('flutter is beast'),
-        Image.asset(
-          'assets/nintendo_switch.jpg',
-          height: 300,
+        Row(
+          children: [
+            SizedBox(
+              width: 10,
+            ),
+            Text(
+              'Pecinta Daon',
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              width: 5,
+            ),
+            Text('Seneng Banget bisa liat daon lagi'),
+          ],
         ),
-        Text('where will come new game'),
-        Image.asset(
-          'assets/piano.jpg',
-          height: 300,
+        SizedBox(
+          height: 10,
         ),
-        Text('time to play some music'),
-        Image.asset(
-          'assets/sword.jpg',
-          height: 300,
-        ),
-        Text('nice sword'),
       ],
     );
   }
