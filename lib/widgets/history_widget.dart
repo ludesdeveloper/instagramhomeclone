@@ -35,7 +35,7 @@ class CircleHistoryWidget extends StatelessWidget {
           ),
           ClipOval(
               child: Image.asset(
-            'blog_leaves.png',
+            'assets/blog_leaves.png',
             height: 60,
             width: 60,
             fit: BoxFit.fill,
@@ -45,7 +45,7 @@ class CircleHistoryWidget extends StatelessWidget {
           ),
           ClipOval(
               child: Image.asset(
-            'sword.jpg',
+            'assets/sword.jpg',
             height: 60,
             width: 60,
             fit: BoxFit.fill,
@@ -55,7 +55,7 @@ class CircleHistoryWidget extends StatelessWidget {
           ),
           ClipOval(
               child: Image.asset(
-            'piano.jpg',
+            'assets/piano.jpg',
             height: 60,
             width: 60,
             fit: BoxFit.fill,
@@ -65,7 +65,7 @@ class CircleHistoryWidget extends StatelessWidget {
           ),
           ClipOval(
               child: Image.asset(
-            'nintendo_switch.jpg',
+            'assets/nintendo_switch.jpg',
             height: 60,
             width: 60,
             fit: BoxFit.fill,
@@ -75,7 +75,7 @@ class CircleHistoryWidget extends StatelessWidget {
           ),
           ClipOval(
               child: Image.asset(
-            'flutter.jpg',
+            'assets/flutter.jpg',
             height: 60,
             width: 60,
             fit: BoxFit.fill,
