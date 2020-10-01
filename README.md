@@ -2,4 +2,4 @@
 
 Home Instagram using Flutter.
 
-![](md_image.jpg)
+![](md_image.jpeg)
